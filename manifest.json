@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Traduction Rapide",
+  "version": "1.0.0",
+  "description": "Surlignez un mot ou une phrase pour obtenir instantanément sa traduction dans une bulle.",
+  "permissions": ["storage", "contextMenus"],
+  "host_permissions": ["https://translate.googleapis.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["languages.js", "content.js"],
+      "all_frames": true,
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Traduction Rapide",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

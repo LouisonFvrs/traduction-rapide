@@ -1,0 +1,7 @@
+.env
+.claude/
+*.zip
+*.crx
+*.pem
+Thumbs.db
+.DS_Store
