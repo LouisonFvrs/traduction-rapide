@@ -44,3 +44,7 @@ L'extension n'est pas publiée sur le Chrome Web Store. Pour l'installer depuis 
 - Le texte surligné est envoyé au service Google Traduction pour être traduit. Désactivez l'extension ou utilisez le mode icône sur les pages contenant des données sensibles.
 - L'extension utilise un point d'accès public non officiel de Google Traduction, qui peut être limité ou interrompu sans préavis.
 - Les textes sont tronqués à 5 000 caractères.
+
+## Licence
+
+Ce projet est distribué sous licence [MIT](LICENSE).
